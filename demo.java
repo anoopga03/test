@@ -21,7 +21,10 @@ public class HashmapDemo {
 		System.out.println("Value of url : " + config.get("url"));
 		
 		System.out.println("Does timeout exist? " + config.containsKey("timeout"));
-		
+		System.out.println("\nLoop using entry set");
+		for(Map.Entry<String, String> entry : config.entrySet()) {
+			System.out.println(entry.getKey() + " : " + entry.getValue());
+		}
 		config.remove("headless");
 		System.out.println("Updated config : " + config);
 		
@@ -33,6 +36,7 @@ public class HashmapDemo {
 		for(Map.Entry<String, String> entry : config.entrySet()) {
 			System.out.println(entry.getKey() + " : " + entry.getValue());
 		}
+        
 		System.out.println("\nLoop using entry set");
 		for(Map.Entry<String, String> entry : config.entrySet()) {
 			System.out.println(entry.getKey() + " : " + entry.getValue());
