@@ -41,6 +41,10 @@ public class HashmapDemo {
 		for(Map.Entry<String, String> entry : config.entrySet()) {
 			System.out.println(entry.getKey() + " : " + entry.getValue());
 		}
+        System.out.println("\nLoop using entry set");
+		for(Map.Entry<String, String> entry : config.entrySet()) {
+			System.out.println(entry.getKey() + " : " + entry.getValue());
+		}
 		
 	}
 
