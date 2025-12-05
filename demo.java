@@ -15,6 +15,15 @@ public class HashmapDemo {
 		config.put("timeout", "30");
 		config.put("headless", "false");
 		config.put("browser", "firefox");
+
+
+
+
+
+
+
+
+
 		System.out.println("\nLoop using entry set");
 		for(Map.Entry<String, String> entry : config.entrySet()) {
 			System.out.println(entry.getKey() + " : " + entry.getValue());
@@ -35,15 +44,7 @@ public class HashmapDemo {
 		for(Map.Entry<String, String> entry : config.entrySet()) {
 			System.out.println(entry.getKey() + " : " + entry.getValue());
 		}
-        System.out.println("\nLoop using entry set");
-		for(Map.Entry<String, String> entry : config.entrySet()) {
-			System.out.println(entry.getKey() + " : " + entry.getValue());
-		}
         
-		System.out.println("\nLoop using entry set");
-		for(Map.Entry<String, String> entry : config.entrySet()) {
-			System.out.println(entry.getKey() + " : " + entry.getValue());
-		}
 		
 	}
 
