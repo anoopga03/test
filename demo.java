@@ -3,7 +3,7 @@ package collections;
 import java.util.HashMap;
 import java.util.Map;
 
-public class HashmapDemo2 {
+public class HashmapDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -26,6 +26,10 @@ public class HashmapDemo2 {
 		System.out.println("Updated config : " + config);
 		
 		System.out.println("\nLoop using entry set");
+		for(Map.Entry<String, String> entry : config.entrySet()) {
+			System.out.println(entry.getKey() + " : " + entry.getValue());
+		}
+        System.out.println("\nLoop using entry set");
 		for(Map.Entry<String, String> entry : config.entrySet()) {
 			System.out.println(entry.getKey() + " : " + entry.getValue());
 		}
